@@ -1,0 +1,20 @@
+create table tpcc..stock (
+    s_i_id		integer,
+    s_w_id		integer,
+    s_quantity		integer,
+    s_dist_01		character (24),
+    s_dist_02		character (24),
+    s_dist_03		character (24),
+    s_dist_04		character (24),
+    s_dist_05		character (24),
+    s_dist_06		character (24),
+    s_dist_07		character (24),
+    s_dist_08		character (24),
+    s_dist_09		character (24),
+    s_dist_10		character (24),
+    s_ytd		numeric,
+    s_cnt_order		integer,
+    s_cnt_remote	integer,
+    s_data		character (50),
+    primary key (s_i_id, s_w_id)
+)

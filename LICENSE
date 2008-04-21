@@ -1,0 +1,9 @@
+JBench - a TPC-A and TPC-C like benchmark program for JDBC drivers
+Copyright (C) 2000-2008 OpenLink Software <jbench@openlinksw.com>
+All Rights Reserved
+
+This softeware is released under the GNU General Public License (see COPYING)
+
+Note that the only valid version of the GPL license as far as this project
+is concerned is the original GNU General Public License Version 2, dated
+June 1991.

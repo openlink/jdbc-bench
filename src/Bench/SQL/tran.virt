@@ -1,0 +1,24 @@
+create procedure ODBC_BENCHMARK(
+	IN vhistid   integer,
+	IN  acct     integer,
+	IN  vteller  integer,
+	IN  vbranch  integer,
+	IN  delta    float, 
+	OUT balanc   float,
+	IN  vfiller  varchar(22))
+{
+	declare cr cursor for select balance from account where account = acct;
+	
+	update account set balance = balance + delta where account = acct;
+
+	open cr;
+	fetch cr into balanc;
+	close cr;
+	
+	update teller set balance = balance + delta where teller = vteller;
+	update branch set balance = balance + delta where branch = vbranch;
+	insert INTO history
+		(histid, account, teller, branch, amount, timeoftxn, filler)
+	values
+		(vhistid, acct, vteller, vbranch, delta, now(), vfiller);
+}

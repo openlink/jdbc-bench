@@ -1,0 +1,20 @@
+create procedure ODBC_BENCHMARK(
+	vhistid IN  number,
+	acct    IN  number,
+	vteller IN  number,
+	vbranch IN  number,
+	delta   IN  float, 
+	balance OUT float,
+	vfiller IN  char)
+is
+BEGIN
+update account set balance = balance + delta where account = acct;
+update teller set balance = balance + delta where teller = vteller;
+update branch set balance = balance + delta where branch = vbranch;
+insert INTO history
+	(histid, account, teller, branch, amount, timeoftxn, filler)
+values
+	(vhistid, acct, vteller, vbranch, delta, SYSDATE, vfiller);
+COMMIT WORK;
+END  ODBC_BENCHMARK;
+

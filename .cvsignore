@@ -5,9 +5,9 @@ autom4te.cache
 config.log
 config.status
 configure
-jbench*.tar.gz
-jbench*.zip
+jdbc-bench*.tar.gz
+jdbc-bench*.zip
 Makefile
 Makefile.in
-out.jbench
-jbench.jar
+out.jdbc-bench
+jdbc-bench.jar

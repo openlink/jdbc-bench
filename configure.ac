@@ -24,10 +24,11 @@ AC_REVISION([$Id$])
 ##  Initialization							##
 ##									##
 ##########################################################################
-AC_INIT([OpenLink JBench Project],
+AC_INIT([OpenLink JDBC Benchmark Utility],
         [0.9],
-	[jbench.admin@openlinksw.com],
-	[jbench])
+	[jdbc-bench@openlinksw.com],
+	[jdbc-bench])
+
 AC_CONFIG_SRCDIR([src/BenchMain.java])
 AC_CONFIG_AUX_DIR(admin)
 AM_INIT_AUTOMAKE([1.7 gnu dist-zip])

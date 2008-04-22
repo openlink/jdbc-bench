@@ -1,5 +1,5 @@
 #
-#  This file is part of the OpenLink JBench project
+#  This file is part of the OpenLink JDBC Benchmark project
 #
 #  Copyright (C) 1999-2008 OpenLink Software
 #
@@ -20,7 +20,7 @@
 AUTOMAKE_OPTIONS	= gnu 1.7 dist-zip
 
 if JDK
-TARGETS         = jbench.jar
+TARGETS         = jdbc-bench.jar
 JDK             = @ac_jdk_path@
 JDK_FLAGS       = -Xlint -O -g:none
 JAVAC           = $(JDK)/bin/javac
@@ -29,26 +29,26 @@ JAVADOC         = $(JDK)/bin/javadoc
 JAR             = $(JDK)/bin/jar
 endif
 
-BUILT_SOURCES	= jbench.jar
-DISTCLEANFILES	= jbench.jar
+BUILT_SOURCES	= jdbc-bench.jar
+DISTCLEANFILES	= jdbc-bench.jar
 
-JBENCH_SRC	=  \
+JDBC_BENCH_SRC	=  \
 		$(srcdir)/src/*.java  \
 		$(srcdir)/src/Bench/*.java
 
-JBENCH_CLASSPATH = $(srcdir)/classes/crimson.jar
+JDBC_BENCH_CLASSPATH = $(srcdir)/classes/crimson.jar
 
-jbench.jar: $(JBENCH_SRC)
-	-mkdir out.jbench
-	$(JAVAC) $(JOPT) -d out.jbench \
-		-classpath "$(JBENCH_CLASSPATH)" \
-		$(JBENCH_SRC)
-	(cd src; find Bench/SQL -type f -print | grep -v CVS | cpio -vdump ../out.jbench )
-	$(JAR) cvf jbench.jar -C out.jbench .
+jdbc-bench.jar: $(JDBC_BENCH_SRC)
+	-mkdir out.jdbc-bench
+	$(JAVAC) $(JOPT) -d out.jdbc-bench \
+		-classpath "$(JDBC_BENCH_CLASSPATH)" \
+		$(JDBC_BENCH_SRC)
+	(cd src; find Bench/SQL -type f -print | grep -v CVS | cpio -vdump ../out.jdbc-bench )
+	$(JAR) cvf jdbc-bench.jar -C out.jdbc-bench .
 
 
 clean-local:
-	-rm -rf out.jbench
+	-rm -rf out.jdbc-bench
 
 # ----------------------------------------------------------------------
 #
@@ -89,10 +89,10 @@ EXTRA_DIST = \
 	$(srcdir)/NEWS \
 	$(srcdir)/README \
 	$(srcdir)/classes/crimson.jar \
-	$(srcdir)/jbench.jar \
-	$(srcdir)/jbench.bat \
-	$(srcdir)/jbench.dtd \
-	$(srcdir)/jbench.sh \
+	$(srcdir)/jdbc-bench.jar \
+	$(srcdir)/jdbc-bench.bat \
+	$(srcdir)/jdbc-bench.dtd \
+	$(srcdir)/jdbc-bench.sh \
 	$(srcdir)/src/*.java \
 	$(srcdir)/src/Bench/*.java \
 	$(srcdir)/src/Bench/SQL/*.sql \

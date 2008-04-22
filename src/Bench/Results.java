@@ -1,9 +1,9 @@
 /*
  *  $Id$
  *
- *  JBench - a TPC-A and TPC-C like benchmark program for JDBC drivers
+ *  jdbc-bench - a TPC-A and TPC-C like benchmark program for JDBC drivers
  *
- *  Copyright (C) 2000-2008 OpenLink Software <jbench@openlinksw.com>
+ *  Copyright (C) 2000-2008 OpenLink Software <jdbc-bench@openlinksw.com>
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -47,7 +47,7 @@ public class Results {
     nEndTime = _nEndTime;
 
     doc = new XmlDocument();
-    doc.setDoctype(null, "jbench.dtd", null);
+    doc.setDoctype(null, "jdbc-bench.dtd", null);
    }
 
    public static Results InitResultsSaving(BenchPanel _pane, int _nEndTime) {

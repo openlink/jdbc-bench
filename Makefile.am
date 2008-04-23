@@ -40,7 +40,7 @@ JDBC_BENCH_CLASSPATH = $(srcdir)/classes/crimson.jar
 
 jdbc-bench.jar: $(JDBC_BENCH_SRC)
 	-mkdir out.jdbc-bench
-	$(JAVAC) $(JOPT) -d out.jdbc-bench \
+	$(JAVAC) $(JDK_FLAGS) -d out.jdbc-bench \
 		-classpath "$(JDBC_BENCH_CLASSPATH)" \
 		$(JDBC_BENCH_SRC)
 	(cd src; find Bench/SQL -type f -print | grep -v CVS | cpio -vdump ../out.jdbc-bench )

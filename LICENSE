@@ -1,5 +1,5 @@
 jdbc-bench - a TPC-A and TPC-C like benchmark program for JDBC drivers
-Copyright (C) 2000-2008 OpenLink Software <jdbc-bench@openlinksw.com>
+Copyright (C) 2000-2012 OpenLink Software <jdbc-bench@openlinksw.com>
 All Rights Reserved
 
 This softeware is released under the GNU General Public License (see COPYING)

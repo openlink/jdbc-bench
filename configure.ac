@@ -3,7 +3,7 @@ AC_REVISION([$Id$])
 #
 #  This file is part of the OpenLink Java Bench project
 #
-#  Copyright (C) 1999-2008 OpenLink Software
+#  Copyright (C) 1999-2012 OpenLink Software
 #
 #  This project is free software; you can redistribute it and/or modify it
 #  under the terms of the GNU General Public License as published by the
@@ -25,13 +25,13 @@ AC_REVISION([$Id$])
 ##									##
 ##########################################################################
 AC_INIT([OpenLink JDBC Benchmark Utility],
-        [0.9],
+        [1.0],
 	[jdbc-bench@openlinksw.com],
 	[jdbc-bench])
 
 AC_CONFIG_SRCDIR([src/BenchMain.java])
 AC_CONFIG_AUX_DIR(admin)
-AM_INIT_AUTOMAKE([1.7 gnu dist-zip])
+AM_INIT_AUTOMAKE([1.9 gnu dist-zip])
 AM_MAINTAINER_MODE
 
 

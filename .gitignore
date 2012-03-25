@@ -30,4 +30,9 @@ tags
 #
 #  Binaries
 #
-jdbc-bench.jar
+*.jar
+
+#
+#  Local files
+#
+results.xml

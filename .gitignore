@@ -31,6 +31,8 @@ tags
 #  Binaries
 #
 *.jar
+*.tar.gz
+*.zip
 
 #
 #  Local files

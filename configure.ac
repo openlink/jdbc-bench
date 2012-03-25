@@ -25,7 +25,7 @@ AC_REVISION([$Id$])
 ##									##
 ##########################################################################
 AC_INIT([OpenLink JDBC Benchmark Utility],
-        [0.9],
+        [1.0],
 	[jdbc-bench@openlinksw.com],
 	[jdbc-bench])
 

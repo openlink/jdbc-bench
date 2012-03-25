@@ -40,7 +40,7 @@ import org.apache.crimson.tree.*;
 public class BenchPanel extends JPanel {
 
    String PACKAGE_NAME = "OpenLink JDBC Benchmark Utility";
-   String PACKAGE_VERSION = "0.99.5";
+   String PACKAGE_VERSION = "1.0";
    String PACKAGE_BUGREPORT = "jdbc-bench@openlinksw.com";
 
    boolean m_bUseFiles = false;

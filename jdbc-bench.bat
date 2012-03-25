@@ -26,4 +26,4 @@ echo from OpenLink Software
 echo -------------------------------------------------------------------------- 
 
 set CLASSPATH=.;.\jdbc-bench.jar;.\classes\crimson.jar
-java -Djdbc.drivers=openlink.jdbc3.Driver BenchMain DRIVERTYPE=0
+java -Djdbc.drivers=openlink.jdbc4.Driver BenchMain DRIVERTYPE=0

@@ -31,7 +31,7 @@ AC_INIT([OpenLink JDBC Benchmark Utility],
 
 AC_CONFIG_SRCDIR([src/BenchMain.java])
 AC_CONFIG_AUX_DIR(admin)
-AM_INIT_AUTOMAKE([1.7 gnu dist-zip])
+AM_INIT_AUTOMAKE([1.9 gnu dist-zip])
 AM_MAINTAINER_MODE
 
 

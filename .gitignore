@@ -38,3 +38,4 @@ tags
 #  Local files
 #
 results.xml
+out.jdbc-bench/

@@ -4,7 +4,7 @@
 #
 #  jdbc-bench - a TPC-A and TPC-C like benchmark program for JDBC drivers
 #  
-#  Copyright (C) 2000-2013 OpenLink Software <jdbc-bench@openlinksw.com>
+#  Copyright (C) 2000-2014 OpenLink Software <jdbc-bench@openlinksw.com>
 #  All Rights Reserved.
 #  
 #  This program is free software; you can redistribute it and/or modify

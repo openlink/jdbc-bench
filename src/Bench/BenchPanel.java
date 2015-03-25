@@ -3,7 +3,7 @@
  *
  *  jdbc-bench - a TPC-A and TPC-C like benchmark program for JDBC drivers
  *
- *  Copyright (C) 2000-2014 OpenLink Software <jdbc-bench@openlinksw.com>
+ *  Copyright (C) 2000-2015 OpenLink Software <jdbc-bench@openlinksw.com>
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -528,7 +528,7 @@ public class BenchPanel extends JPanel {
          public void actionPerformed(ActionEvent e) {
             JPanel pane = new JPanel(new GridLayout(12,1,25,0));
             pane.add(new JLabel(PACKAGE_NAME + " v. " + PACKAGE_VERSION, SwingConstants.LEFT));
-            pane.add(new JLabel("(C) 2000-2014 OpenLink Software", SwingConstants.LEFT));
+            pane.add(new JLabel("(C) 2000-2015 OpenLink Software", SwingConstants.LEFT));
             pane.add(new JLabel("Please report all bugs to <" + PACKAGE_BUGREPORT + ">" , SwingConstants.LEFT));
             pane.add(new JLabel(""));
             pane.add(new JLabel("This utility is released under the GNU General Public License (GPL)", SwingConstants.LEFT));

@@ -42,7 +42,7 @@ AM_MAINTAINER_MODE
 ##########################################################################
 ac_jdk_path="none"
 AC_ARG_WITH(jdk, [dnl
-AC_HELP_STRING([--with-jdk=DIR], [use the Sun JDK 1.3.x, 1.4.x, 1.5.x or 1.6.x at the specified location])dnl
+AC_HELP_STRING([--with-jdk=DIR], [use the Sun JDK 1.3.x, 1.4.x, 1.5.x, 1.6.x, 1.7.x or 1.8.x at the specified location])dnl
 ], [ 
     case "${withval}" in
       yes) 	
@@ -117,7 +117,7 @@ EOF
 fi  
 ])
 
-AC_PROG_JAVA_WORKS($ac_jdk_path, 3, 6)
+AC_PROG_JAVA_WORKS($ac_jdk_path, 3, 8)
 ac_jdk_works="$ac_cv_prog_java_works"
 AM_CONDITIONAL(JDK, test "x$ac_jdk_works" = "xyes")
 AC_SUBST(ac_jdk_path)

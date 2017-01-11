@@ -22,7 +22,7 @@ AUTOMAKE_OPTIONS	= gnu 1.7 dist-zip
 if JDK
 TARGETS         = jdbc-bench.jar
 JDK             = @ac_jdk_path@
-JDK_FLAGS       = -Xlint -O -g:none
+JDK_FLAGS       = -Xlint -g
 JAVAC           = $(JDK)/bin/javac
 JAVAH           = $(JDK)/bin/javah
 JAVADOC         = $(JDK)/bin/javadoc

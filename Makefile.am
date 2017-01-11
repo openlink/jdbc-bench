@@ -38,7 +38,7 @@ JDBC_BENCH_SRC	=  \
 
 JDBC_BENCH_CLASSPATH = $(srcdir)/classes/crimson.jar
 
-jdbc-bench.jar: $(JDBC_BENCH_SRC)
+jdbc-bench.jar: $(JDBC_BENCH_SRC) Makefile
 	-mkdir out.jdbc-bench
 	$(JAVAC) $(JDK_FLAGS) -d out.jdbc-bench \
 		-classpath "$(JDBC_BENCH_CLASSPATH)" \

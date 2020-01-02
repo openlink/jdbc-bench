@@ -2,7 +2,7 @@
 REM
 REM  jdbc-bench - a TPC-A and TPC-C like benchmark program for JDBC drivers
 REM  
-REM  Copyright (C) 2000-2019 OpenLink Software <jdbc-bench@openlinksw.com>
+REM  Copyright (C) 2000-2020 OpenLink Software <jdbc-bench@openlinksw.com>
 REM  All Rights Reserved.
 REM  
 REM  This program is free software; you can redistribute it and/or modify
